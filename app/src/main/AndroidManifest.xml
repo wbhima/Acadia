@@ -39,6 +39,63 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.staff.StudentData"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StaffData"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StaffAdd"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StudentList"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StaffList"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.Classroom"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.Community"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.JoinNewClassroom"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.StudentHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.StudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StaffProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.staff.StaffHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.Quiz"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.AssigmentUpload"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.ClassroomChat"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.QuizList"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.AssignmentList"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.AttendenceReport"
+            android:exported="false" />
+        <activity
+            android:name=".activity.student.ClassroomList"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_classroom_attendence_report" />
 
     <Button
-        android:id="@+id/txt_classroom_assignment"
+        android:id="@+id/btn_assignment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"

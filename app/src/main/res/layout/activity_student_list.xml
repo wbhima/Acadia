@@ -17,13 +17,13 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView7"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_student_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView7"
+        android:id="@+id/recycler_student_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
