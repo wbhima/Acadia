@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63979616229",
+    "project_id": "acadia-d3b7c",
+    "storage_bucket": "acadia-d3b7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63979616229:android:c612bd7408a4b4072b610c",
+        "android_client_info": {
+          "package_name": "com.example.acadia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8oNWZ5FH1LnaX37AIHtpSsx76Cfg3FFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
