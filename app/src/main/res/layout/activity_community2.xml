@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/txt_community_home"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#3F7CAC"
+        android:text="Community"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_community_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_new_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Community"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

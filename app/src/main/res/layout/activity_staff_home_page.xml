@@ -1,55 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.staff.StaffHomePage">
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
     <TextView
-        android:id="@+id/txt_classroom_name"
-        android:layout_width="0dp"
+        android:id="@+id/txt_staff_home"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3F7CAC"
-        android:text="Staff Home Page"
+        android:text="Staff Home"
+         android:layout_marginBottom="10dp"
+        android:textSize="24sp"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="16dp"
+        android:background="#3F7CAC"
+        android:textColor="@android:color/white"/>
 
     <Button
-        android:id="@+id/btn_staff_profile"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_student_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Management"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_staff_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Staff Management"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Profile"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="128dp" />
-
-    <Button
-        android:id="@+id/btn_staff_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Staff List"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="236dp" />
-
-    <Button
-        android:id="@+id/btn_student_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student List"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btn_add_staff"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Staff"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="625dp" />
+        android:text="Add Staff"/>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

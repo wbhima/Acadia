@@ -1,5 +1,6 @@
 package com.example.acadia
 
+import StaffSignup
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -71,7 +72,6 @@ var position="";
                             }
                             else -> {
                                 // Handle unknown position
-                                Toast.makeText(this@Signupmain, "Unknown position", Toast.LENGTH_SHORT).show()
                             }
                         }
 

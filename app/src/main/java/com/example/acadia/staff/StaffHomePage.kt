@@ -18,17 +18,17 @@ class StaffHomePage : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.btnStaffProfile.setOnClickListener{
+        binding.btnProfile.setOnClickListener{
             val intent= Intent(this, StaffProfile::class.java)
             startActivity(intent)
             finish()
         }
-        binding.btnStaffList.setOnClickListener{
+        binding.btnStaffManage.setOnClickListener{
             val intent= Intent(this, StaffList::class.java)
             startActivity(intent)
             finish()
         }
-        binding.btnStudentList.setOnClickListener{
+        binding.btnStudentManage.setOnClickListener{
             val intent= Intent(this, StudentList::class.java)
             startActivity(intent)
             finish()

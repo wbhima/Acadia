@@ -13,7 +13,7 @@ class AssignmentList : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recyclerAssignmentList.setOnClickListener{
-            val intent= Intent(this, AssigmentUpload::class.java)
+            val intent= Intent(this, AssignmentUpload::class.java)
             startActivity(intent)
             finish()
         }

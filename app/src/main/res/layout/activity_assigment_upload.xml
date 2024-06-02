@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/bggci"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.student.AssigmentUpload">
+    tools:context=".activity.student.AssignmentUpload">
+
     <TextView
         android:id="@+id/txt_classroom_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#3F7CAC"
-        android:text="Assigment Upload"
+        android:text="Assignment Upload"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
@@ -19,30 +21,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload PDF"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="252dp" />
-
     <EditText
         android:id="@+id/et_assignment_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter Assigment Name"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:hint="Enter Assignment Name"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_classroom_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_assignment_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
     <Button
         android:id="@+id/btn_upload_answer"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Upload Answer"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="350dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_upload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

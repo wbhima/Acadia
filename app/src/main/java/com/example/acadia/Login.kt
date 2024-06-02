@@ -7,6 +7,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.acadia.activity.staff.StaffHomePage
+import com.example.acadia.activity.student.StudentHomePage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -62,7 +64,7 @@ logSignTextView.setOnClickListener {
                                         "student" -> {
                                             // Navigate to StudentActivity
                                             Toast.makeText(this@Login, "Welcome, Student!", Toast.LENGTH_SHORT).show()
-                                            startActivity(Intent(this@Login, MainActivityStudent::class.java))
+                                            startActivity(Intent(this@Login, StudentHomePage::class.java))
 
                                         }
                                         "teacher" -> {
@@ -73,11 +75,11 @@ logSignTextView.setOnClickListener {
                                         "staff" -> {
                                             // Navigate to StaffActivity
                                             Toast.makeText(this@Login, "Welcome, Staff!", Toast.LENGTH_SHORT).show()
-                                             startActivity(Intent(this@Login, MainActivityStaff::class.java))
+                                             startActivity(Intent(this@Login, StaffHomePage::class.java))
                                         }
                                         else -> {
                                             // Handle unknown position
-                                            Toast.makeText(this@Login, "Unknown position", Toast.LENGTH_SHORT).show()
+                                             Toast.makeText(this@Login, "Unknown position", Toast.LENGTH_SHORT).show()
                                         }
                                     }
                                 } else {
