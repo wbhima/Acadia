@@ -2,20 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/ic_signup">
 
-    <TextView
-        android:id="@+id/txt_staff_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Staff Home"
-         android:layout_marginBottom="10dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:padding="16dp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="16dp"
         android:background="#3F7CAC"
-        android:textColor="@android:color/white"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:title="Staff Home"
+        app:titleTextColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_student_manage"

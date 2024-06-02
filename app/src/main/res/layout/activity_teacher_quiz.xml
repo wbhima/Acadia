@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggci"
+    tools:context=".teacher.TeacherQuiz">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:background="#3F7CAC"
+        app:layout_constraintBottom_toTopOf="@+id/etQuiz_No"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:title="Teacher Quiz"
+        app:titleTextColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnCreateQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="352dp"
+        android:text="Create Quiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/etQuiz_No"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Quiz Number"
+        app:layout_constraintBottom_toTopOf="@+id/etQuiz_Marks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/etQuiz_Marks"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="479dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Marks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etQuiz_No"
+        app:layout_constraintTop_toBottomOf="@+id/etQuiz_No" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

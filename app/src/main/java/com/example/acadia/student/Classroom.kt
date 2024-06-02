@@ -2,11 +2,7 @@ package com.example.acadia.activity.student
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.acadia.R
 import com.example.acadia.databinding.ActivityClassroomBinding
 
 class Classroom : AppCompatActivity() {
@@ -21,7 +17,7 @@ class Classroom : AppCompatActivity() {
             finish()
         }
         binding.recyclerClassroomList.setOnClickListener{
-            val intent=Intent(this, ClassroomList::class.java)
+            val intent=Intent(this, ClassroomN::class.java)
             startActivity(intent)
             finish()
         }

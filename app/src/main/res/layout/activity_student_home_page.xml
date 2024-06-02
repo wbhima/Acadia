@@ -2,39 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+
+    android:background="@drawable/bggci">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3F7CAC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:title="Student Home Page"
+        app:titleTextColor="@android:color/white" />
 
     <TextView
-        android:id="@+id/txt_student_home"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Home"
-        android:layout_marginBottom="10dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:padding="16dp"
-        android:background="#3F7CAC"
-        android:textColor="@android:color/white"/>
+        android:text="Hello Student!"
+        android:textSize="48dp"/>
 
     <Button
         android:id="@+id/btn_classroom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Classroom"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Classroom" />
 
     <Button
         android:id="@+id/btn_community"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Community"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Community" />
 
     <Button
         android:id="@+id/btn_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profile"/>
+        android:text="Profile" />
 
 </LinearLayout>

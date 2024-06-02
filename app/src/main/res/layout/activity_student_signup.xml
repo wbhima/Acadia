@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudentSignup">
+    android:background="@drawable/ic_signup"
+    tools:context=".student.StudentSignup">
 
     <ImageButton
         android:id="@+id/back_button"
@@ -14,8 +15,10 @@
         android:src="@drawable/ic_back_arrow_foreground"
         app:layout_constraintBottom_toTopOf="@+id/name_edit_text"
         app:layout_constraintEnd_toStartOf="@+id/create_account_title"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
 
     <TextView
         android:id="@+id/create_account_title"
@@ -25,7 +28,7 @@
         android:layout_marginEnd="12dp"
         android:text="Create account"
         android:textAlignment="center"
-        android:textColor="#2488F6"
+        android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

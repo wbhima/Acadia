@@ -17,11 +17,7 @@ class Quiz : AppCompatActivity() {
         binding= ActivityQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recyclerQuiz.setOnClickListener{
-            val intent= Intent(this, Quiz::class.java)
-            startActivity(intent)
-            finish()
-        }
+
 
 
     }

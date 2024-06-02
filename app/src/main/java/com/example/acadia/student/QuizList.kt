@@ -17,7 +17,7 @@ class QuizList : AppCompatActivity() {
         binding=ActivityQuizListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recyclerQuizList.setOnClickListener{
+        binding.recyclerView2.setOnClickListener{
             val intent= Intent(this, Quiz::class.java)
             startActivity(intent)
             finish()

@@ -1,3 +1,5 @@
+package com.example.acadia.staff
+
 import android.hardware.biometrics.BiometricPrompt
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

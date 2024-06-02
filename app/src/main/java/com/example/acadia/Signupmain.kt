@@ -1,12 +1,14 @@
 package com.example.acadia
 
-import StaffSignup
+import com.example.acadia.staff.StaffSignup
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.acadia.student.StudentSignup
+import com.example.acadia.teacher.TeacherSignup
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -26,7 +28,7 @@ class Signupmain : AppCompatActivity() {
 
         val emailEditText = findViewById<EditText>(R.id.signemail)
         val button2 = findViewById<Button>(R.id.button2)
-var position="";
+        var position="";
         button2.setOnClickListener {
             // Get the email from the EditText
             val email = emailEditText.text.toString()

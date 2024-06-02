@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,25 +15,76 @@
         android:theme="@style/Theme.Acadia"
         tools:targetApi="31">
         <activity
-            android:name=".Community"
+            android:name=".teacher.ClassroomN"
             android:exported="false" />
         <activity
-            android:name=".TeacherClassroom"
+            android:name=".teacher.CreateClassroom"
             android:exported="false" />
         <activity
-            android:name=".TeacherHome"
+            android:name=".student.community.Chat"
             android:exported="false" />
         <activity
-            android:name=".MainActivityTeacher"
+            android:name=".student.community.ConnectedUserList"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.StudentList"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.QuizQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.UploadAssigment"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.StudentSubmitted"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.NewAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.OldAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.Assignment"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.ChangeAndUploadAttendence"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.AttendenceReport"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.UploadNewNotes"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.NotesList"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherProfile"
+            android:exported="false" />
+        <activity
+            android:name=".student.community.Community"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherClassroom"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherHome"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.MainActivityTeacher"
             android:exported="false" />
         <activity
             android:name=".StaffSignup"
             android:exported="false" />
         <activity
-            android:name=".TeacherSignup"
+            android:name=".teacher.TeacherSignup"
             android:exported="false" />
         <activity
-            android:name=".StudentSignup"
+            android:name=".student.StudentSignup"
             android:exported="false" />
         <activity
             android:name=".Signupmain"
@@ -104,7 +156,7 @@
             android:name=".activity.student.AttendenceReport"
             android:exported="false" />
         <activity
-            android:name=".activity.student.ClassroomList"
+            android:name=".activity.student.ClassroomN"
             android:exported="false" />
     </application>
 
